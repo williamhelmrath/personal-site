@@ -9,6 +9,7 @@
   color: white;
   background: #1a1a1a;
   @apply bg-gradient-to-br from-black;
+  font-family: "Raleway", sans-serif;
 }
 
 .main {
@@ -17,7 +18,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Raleway", sans-serif;
+}
+
+.footer {
+  background: #1a1a1a;
 }
 
 .title {
