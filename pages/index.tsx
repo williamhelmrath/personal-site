@@ -34,7 +34,7 @@ export default function Home() {
               alt="My headshot"
             />
           </div>
-          <div className="text-5xl font-bold my-6">
+          <div className="md:text-5xl text-2xl font-bold my-6">
             <h1>
               {"Hello, I'm "}
               <span className="text-yellow-300">William Helmrath</span>.
