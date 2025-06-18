@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+import profile from "../assets/profile-cropped.jpg";
+import { Picture } from "astro:assets";
+---
+
+<Layout>
+  <main class="flex flex-col justify-center h-screen px-8">
+    <div
+      class="flex items-center xl:gap-16 gap-4 flex-wrap justify-center content-center"
+    >
+      <div
+        class="rounded-2xl border-8 border-yellow-300 overflow-hidden aspect-square headshot-container"
+      >
+        <Picture src={profile} alt="headshot" loading="eager" />
+      </div>
+      <div
+        class="flex flex-col items-center md:items-start md:text-center text-container"
+      >
+        <h1 class="text-3xl xl:text-6xl mb-2">
+          Hello, I'm <span class="text-yellow-300">William Helmrath</span>.
+        </h1>
+        <h2 class="text-lg xl:text-2xl font-bold mb-4">
+          Software Engineer, Fullstack Web Developer
+        </h2>
+        <div class="flex md:gap-4 gap-2 flex-wrap">
+          <a
+            href="https://github.com/williamhelmrath"
+            target="_blank"
+            class="link"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/williamhelmrath"
+            target="_blank"
+            class="link"
+          >
+            LinkedIn
+          </a>
+          <a href="/resume.pdf" target="_blank" class="link">Resume</a>
+          <a href="mailto:william.helmrath@live.com" class="link">Email</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="fixed bottom-0 left-0 w-full xl:p-4 p-2 text-center">
+    <p>Made with 💛</p>
+  </footer>
+</Layout>
