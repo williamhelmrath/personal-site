@@ -17,7 +17,7 @@ footer {
 }
 
 .link {
-  border: 1px solid var(--color-yellow-300);
+  border: 2px solid var(--color-yellow-300);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
