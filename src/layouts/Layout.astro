@@ -1,3 +1,7 @@
+---
+import Background from "./Background.astro";
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,6 +22,7 @@
     />
   </head>
   <body>
+    <Background />
     <slot />
   </body>
 </html>
@@ -28,5 +33,6 @@
     margin: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
 </style>
