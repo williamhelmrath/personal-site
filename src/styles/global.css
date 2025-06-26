@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+  --bg-color: hsl(224, 10%, 10%);
+  --bg-color-secondary: hsl(224, 14%, 16%);
+}
 * {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -8,15 +12,16 @@
 }
 
 body {
-  background-color: hsl(224, 10%, 10%);
+  background-color: var(--bg-color);
   color: white;
 }
 
 footer {
-  background-color: hsl(224, 14%, 16%);
+  background-color: var(--bg-color-secondary);
 }
 
 .link {
+  background-color: var(--bg-color);
   border: 2px solid var(--color-yellow-300);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
