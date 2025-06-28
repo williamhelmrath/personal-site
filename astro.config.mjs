@@ -11,5 +11,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  adapter: cloudflare(),
+  adapter: process.env.NODE_ENV === "production" ? cloudflare() : undefined,
 });
